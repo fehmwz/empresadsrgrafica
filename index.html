@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DSR Gráfica - Impressão com Qualidade</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:#0d47a1;
+    color:white;
+    padding:20px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url('https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:#ff9800;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.section{
+    padding:60px 5%;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#0d47a1;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.card h3{
+    color:#0d47a1;
+    margin-bottom:10px;
+}
+
+.about{
+    background:white;
+}
+
+.contact{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+footer{
+    background:#082c66;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">DSR Gráfica</div>
+    <nav>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Imprimindo Suas Ideias</h1>
+    <p>Qualidade, rapidez e atendimento especializado para sua empresa.</p>
+    <a href="#contato" class="btn">Solicitar Orçamento</a>
+</section>
+
+<section id="servicos" class="section">
+    <h2>Nossos Serviços</h2>
+
+    <div class="services">
+        <div class="card">
+            <h3>Cartões de Visita</h3>
+            <p>Impressão profissional para fortalecer sua marca.</p>
+        </div>
+
+        <div class="card">
+            <h3>Banners e Cartazes</h3>
+            <p>Divulgue sua empresa com alta qualidade visual.</p>
+        </div>
+
+        <div class="card">
+            <h3>Panfletos</h3>
+            <p>Material promocional para campanhas e eventos.</p>
+        </div>
+
+        <div class="card">
+            <h3>Brindes Personalizados</h3>
+            <p>Produtos exclusivos para divulgação da sua marca.</p>
+        </div>
+    </div>
+</section>
+
+<section id="sobre" class="section about">
+    <h2>Sobre a DSR Gráfica</h2>
+
+    <p style="max-width:900px;margin:auto;text-align:center;line-height:1.8;">
+        A DSR Gráfica oferece soluções completas em impressão, comunicação visual,
+        brindes personalizados e materiais promocionais. Nosso compromisso é
+        entregar qualidade, agilidade e atendimento personalizado para cada cliente.
+    </p>
+</section>
+
+<section id="contato" class="section contact">
+    <h2>Contato</h2>
+
+    <p><strong>Endereço:</strong> Rua do Rosário, 151 - Vila Camargos - Guarulhos/SP</p>
+    <p><strong>Telefone:</strong> (11) 98230-5193</p>
+    <p><strong>Email:</strong> dsrgrafica@gmail.com</p>
+
+    <br>
+
+    <a class="btn"
+       href="https://wa.me/5511982305193"
+       target="_blank">
+       Falar no WhatsApp
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 DSR Gráfica - Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
